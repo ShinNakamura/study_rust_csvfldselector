@@ -34,6 +34,7 @@ pub fn run() -> MyResult {
         }
         wtr.write_record(&record)?;
     }
+    wtr.flush()?;
     Ok(())
 }
 
